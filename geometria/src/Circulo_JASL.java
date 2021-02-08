@@ -6,6 +6,9 @@ public class Circulo_JASL extends FiguraGeometrica_JASL {
 	
 	public Circulo_JASL(double r, String tipoFigura) {
 		super(tipoFigura);
+		if(r<0) {
+			r= r*(-1);
+		}
 		radio = r;
 	}
 
